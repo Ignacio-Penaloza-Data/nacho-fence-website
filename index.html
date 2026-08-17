@@ -1,0 +1,1752 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#2b2016">
+
+    <title>Nacho Fence | Fence Installation & Repair</title>
+
+    <link rel="icon" href="/favicon.ico">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    >
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css?v=15">
+    <link rel="stylesheet" href="css/chatbot.css">
+</head>
+
+<body>
+
+
+    <!-- ========================================
+         HEADER
+    ========================================= -->
+
+    <header class="main-header">
+
+        <a href="#home" class="logo">
+            Nacho Fence
+        </a>
+
+
+        <nav class="desktop-nav">
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#repair">Repair</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+
+        <button
+            class="menu-button"
+            id="menuButton"
+            aria-label="Open menu"
+        >
+            <i class="fas fa-bars"></i>
+        </button>
+
+
+        <nav
+            class="mobile-nav"
+            id="mobileNav"
+        >
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#repair">Repair</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+    </header>
+
+
+
+    <!-- ========================================
+         HERO SLIDESHOW
+    ========================================= -->
+
+    <section class="hero" id="home">
+
+
+        <!-- SLIDE 1 -->
+        <div class="hero-slide active">
+
+            <img
+                src="images/6ft tall fence ai.PNG"
+                alt="Six foot privacy fence"
+            >
+
+        </div>
+
+
+        <!-- SLIDE 2 -->
+        <div class="hero-slide">
+
+            <img
+                src="images/8ft tall fence ai.PNG"
+                alt="Eight foot tall privacy fence"
+            >
+
+        </div>
+
+
+        <!-- SLIDE 3 -->
+        <div class="hero-slide">
+
+            <img
+                src="images/aluminum pool fence ai.PNG"
+                alt="Aluminum pool fence"
+            >
+
+        </div>
+
+
+        <!-- SLIDE 4 -->
+        <div class="hero-slide">
+
+            <img
+                src="images/Aluminum Ai.PNG"
+                alt="Aluminum fence"
+            >
+
+        </div>
+
+
+        <!-- SLIDE 5 -->
+        <div class="hero-slide">
+
+            <img
+                src="images/shadow box 2.0 ai.PNG"
+                alt="Shadow box fence"
+            >
+
+        </div>
+
+
+        <!-- SLIDE 6 -->
+        <div class="hero-slide">
+
+            <img
+                src="images/ShadowBox Ai.PNG"
+                alt="Shadow box fencing"
+            >
+
+        </div>
+
+
+        <!-- SLIDE 7 -->
+        <div class="hero-slide">
+
+            <img
+                src="images/4ftSaddle Ai.PNG"
+                alt="Saddle style fence"
+            >
+
+        </div>
+
+
+        <!-- SLIDE 8 -->
+        <div class="hero-slide">
+
+            <img
+                src="images/Trellis Ai.PNG"
+                alt="Trellis fence"
+            >
+
+        </div>
+
+
+        <!-- SLIDE 9 -->
+        <div class="hero-slide">
+
+            <img
+                src="images/AlumCedarGate.jpeg"
+                alt="Aluminum and cedar gate"
+            >
+
+        </div>
+
+
+
+        <!-- DARK OVERLAY -->
+
+        <div class="hero-overlay"></div>
+
+
+
+        <!-- HERO CONTENT -->
+
+        <div class="hero-content">
+
+            <p class="hero-small">
+                Professional Fence Services
+            </p>
+
+
+            <h1>
+                Your Trusted Fence Experts
+            </h1>
+
+
+            <p class="hero-description">
+
+                Quality fence installation, repair, and staining
+                built to protect your property and improve its appearance.
+
+            </p>
+
+
+            <div class="hero-buttons">
+
+                <a
+                    href="#contact"
+                    class="primary-button"
+                >
+                    Get a Free Quote
+                </a>
+
+
+                <a
+                    href="#services"
+                    class="secondary-button"
+                >
+                    View Our Services
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- LEFT ARROW -->
+
+        <button
+            class="slider-arrow slider-prev"
+            id="prevSlide"
+            aria-label="Previous slide"
+        >
+            &#10094;
+        </button>
+
+
+
+        <!-- RIGHT ARROW -->
+
+        <button
+            class="slider-arrow slider-next"
+            id="nextSlide"
+            aria-label="Next slide"
+        >
+            &#10095;
+        </button>
+
+
+
+        <!-- DOTS -->
+
+        <div class="slider-dots">
+
+            <button
+                class="slider-dot active"
+                data-slide="0"
+                aria-label="Slide 1"
+            ></button>
+
+            <button
+                class="slider-dot"
+                data-slide="1"
+                aria-label="Slide 2"
+            ></button>
+
+            <button
+                class="slider-dot"
+                data-slide="2"
+                aria-label="Slide 3"
+            ></button>
+
+            <button
+                class="slider-dot"
+                data-slide="3"
+                aria-label="Slide 4"
+            ></button>
+
+            <button
+                class="slider-dot"
+                data-slide="4"
+                aria-label="Slide 5"
+            ></button>
+
+            <button
+                class="slider-dot"
+                data-slide="5"
+                aria-label="Slide 6"
+            ></button>
+
+            <button
+                class="slider-dot"
+                data-slide="6"
+                aria-label="Slide 7"
+            ></button>
+
+            <button
+                class="slider-dot"
+                data-slide="7"
+                aria-label="Slide 8"
+            ></button>
+
+            <button
+                class="slider-dot"
+                data-slide="8"
+                aria-label="Slide 9"
+            ></button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ========================================
+         TRUST BAR
+    ========================================= -->
+
+    <section class="trust-bar">
+
+        <div class="trust-bar-inner">
+
+            <span>Free, No-Obligation Estimates</span>
+
+            <span class="trust-divider" aria-hidden="true"></span>
+
+            <span>Locally Owned & Operated</span>
+
+            <span class="trust-divider" aria-hidden="true"></span>
+
+            <span>Licensed & Insured</span>
+
+            <span class="trust-divider" aria-hidden="true"></span>
+
+            <span>Residential & Commercial</span>
+
+        </div>
+
+    </section>
+
+
+
+    <main>
+
+
+        <!-- ========================================
+             WHY CHOOSE US
+        ========================================= -->
+
+        <section class="why-section">
+
+            <div class="section-heading reveal">
+
+                <p class="section-label">
+                    WHY CHOOSE US
+                </p>
+
+                <h2>
+                    Why Choose Nacho Fence?
+                </h2>
+
+                <p>
+                    We provide dependable fencing solutions with
+                    quality workmanship, straightforward pricing,
+                    and attention to detail.
+                </p>
+
+            </div>
+
+
+
+            <div class="why-grid">
+
+
+                <div class="why-card reveal">
+
+                    <i class="fas fa-hammer"></i>
+
+                    <h3>
+                        Quality Craftsmanship
+                    </h3>
+
+                    <p>
+                        Every project is completed with attention
+                        to detail and durable materials.
+                    </p>
+
+                </div>
+
+
+
+                <div class="why-card reveal">
+
+                    <i class="fas fa-dollar-sign"></i>
+
+                    <h3>
+                        Honest Pricing
+                    </h3>
+
+                    <p>
+                        Clear estimates and straightforward pricing
+                        so you know what to expect.
+                    </p>
+
+                </div>
+
+
+
+                <div class="why-card reveal">
+
+                    <i class="fas fa-clock"></i>
+
+                    <h3>
+                        Reliable Service
+                    </h3>
+
+                    <p>
+                        We value your time and work efficiently
+                        without sacrificing quality.
+                    </p>
+
+                </div>
+
+
+
+                <div class="why-card reveal">
+
+                    <i class="fas fa-thumbs-up"></i>
+
+                    <h3>
+                        Customer Satisfaction
+                    </h3>
+
+                    <p>
+                        We work with you to make sure the finished
+                        project meets your needs.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ========================================
+             SERVICES
+        ========================================= -->
+
+        <section
+            class="services-section"
+            id="services"
+        >
+
+            <div class="services-overlay"></div>
+
+
+            <div class="services-content">
+
+                <div class="section-heading light reveal">
+
+                    <p class="section-label">
+                        WHAT WE DO
+                    </p>
+
+                    <h2>
+                        Our Fence Services
+                    </h2>
+
+                    <p>
+                        From new installations to repairs and staining,
+                        we provide fencing services for residential
+                        and commercial properties.
+                    </p>
+
+                </div>
+
+
+
+                <div class="services-grid">
+
+
+                    <div class="service-card reveal">
+
+                        <i class="fas fa-home"></i>
+
+                        <div>
+
+                            <h3>
+                                Residential Fences
+                            </h3>
+
+                            <p>
+                                Wood, vinyl, aluminum, and chain-link
+                                fencing for privacy, security, and style.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="service-card reveal">
+
+                        <i class="fas fa-building"></i>
+
+                        <div>
+
+                            <h3>
+                                Commercial Fences
+                            </h3>
+
+                            <p>
+                                Durable fencing solutions for businesses,
+                                commercial properties, and facilities.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="service-card reveal">
+
+                        <i class="fas fa-tools"></i>
+
+                        <div>
+
+                            <h3>
+                                Fence Repair
+                            </h3>
+
+                            <p>
+                                Repairs for broken posts, pickets,
+                                panels, rails, gates, and more.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="service-card reveal">
+
+                        <i class="fas fa-door-open"></i>
+
+                        <div>
+
+                            <h3>
+                                Custom Gates
+                            </h3>
+
+                            <p>
+                                Gate installation and repair for
+                                convenient access and improved security.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="service-card reveal">
+
+                        <i class="fas fa-paint-roller"></i>
+
+                        <div>
+
+                            <h3>
+                                Fence Staining
+                            </h3>
+
+                            <p>
+                                Professional staining to protect wood
+                                fences and improve their appearance.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="service-card reveal">
+
+                        <i class="fas fa-water"></i>
+
+                        <div>
+
+                            <h3>
+                                Pool & Safety Fencing
+                            </h3>
+
+                            <p>
+                                Code-compliant aluminum and mesh fencing
+                                to keep pools and play areas secure.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ========================================
+             FENCING SOLUTIONS + MATERIAL SELECT
+        ========================================= -->
+
+        <section
+            class="solutions-section"
+            id="solutions"
+        >
+
+            <div class="section-heading reveal">
+
+                <p class="section-label">
+                    FENCING SOLUTIONS
+                </p>
+
+                <h2>
+                    Solutions for Every Home & Business
+                </h2>
+
+                <p>
+                    Whatever your property needs, there's a fence built
+                    for the job. Browse a few of the ways we solve
+                    privacy, security, and style.
+                </p>
+
+            </div>
+
+
+
+            <div class="solutions-grid">
+
+
+                <div class="solution-card reveal">
+
+                    <div class="frame-inner">
+
+                        <img
+                            src="images/8ft tall fence ai.png"
+                            alt="Tall privacy fence"
+                        >
+
+                    </div>
+
+                    <h3>
+                        Privacy Fences
+                    </h3>
+
+                    <p>
+                        Keep your yard secluded and peaceful.
+                    </p>
+
+                </div>
+
+
+
+                <div class="solution-card reveal">
+
+                    <div class="frame-inner">
+
+                        <img
+                            src="images/8ftVinyl.PNG"
+                            alt="Stained wood fence"
+                        >
+
+                    </div>
+
+                    <h3>
+                        Vinyl Fences
+                    </h3>
+
+                    <p>
+                        Classic, stylish, and built to last.
+                    </p>
+
+                </div>
+
+
+
+                <div class="solution-card reveal">
+
+                    <div class="frame-inner">
+
+                        <img
+                            src="images/aluminum pool fence ai.png"
+                            alt="Aluminum security fence"
+                        >
+
+                    </div>
+
+                    <h3>
+                        Aluminum & Security Fences
+                    </h3>
+
+                    <p>
+                        Strong protection for homes and businesses.
+                    </p>
+
+                </div>
+
+
+
+                <div class="solution-card reveal">
+
+                    <div class="frame-inner">
+
+                        <img
+                            src="images/5ft Steel2.PNG"
+                            alt="Decorative shadow box fence"
+                        >
+
+                    </div>
+
+                    <h3>
+                        Ornamental & Decorative Fences
+                    </h3>
+
+                    <p>
+                        Elevate your property's aesthetic.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+
+            <div class="material-select reveal">
+
+                <p class="material-select-label">
+                    Select Fence Material
+                </p>
+
+                <div class="material-pills">
+
+                    <a href="#contact" class="material-pill">
+                        Wood
+                    </a>
+
+                    <a href="#contact" class="material-pill">
+                        Vinyl
+                    </a>
+
+                    <a href="#contact" class="material-pill">
+                        Aluminum
+                    </a>
+
+                    <a href="#contact" class="material-pill">
+                        Chain Link
+                    </a>
+
+                    <a href="#contact" class="material-pill">
+                        Composite
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ========================================
+             FULL REPAIR SECTION
+        ========================================= -->
+
+        <section
+            class="repair-section"
+            id="repair"
+        >
+
+
+            <div class="section-heading reveal">
+
+                <p class="section-label">
+                    REPAIR SERVICES
+                </p>
+
+
+                <h2>
+                    Professional Fence Repair
+                </h2>
+
+
+                <p>
+                    Repairing damaged areas early can help prevent
+                    larger problems and unnecessary replacement costs.
+                </p>
+
+            </div>
+
+
+
+            <div class="repair-details">
+
+
+                <div class="repair-list reveal-left">
+
+                    <h3>
+                        What We Repair
+                    </h3>
+
+
+                    <ul>
+
+                        <li>
+                            <i class="fas fa-check"></i>
+                            Loose or broken posts
+                        </li>
+
+                        <li>
+                            <i class="fas fa-check"></i>
+                            Missing or damaged boards
+                        </li>
+
+                        <li>
+                            <i class="fas fa-check"></i>
+                            Rotting or water-damaged wood
+                        </li>
+
+                        <li>
+                            <i class="fas fa-check"></i>
+                            Warped rails and panels
+                        </li>
+
+                        <li>
+                            <i class="fas fa-check"></i>
+                            Broken or sagging gates
+                        </li>
+
+                        <li>
+                            <i class="fas fa-check"></i>
+                            Gate alignment and hardware
+                        </li>
+
+                        <li>
+                            <i class="fas fa-check"></i>
+                            Chain-link damage
+                        </li>
+
+                        <li>
+                            <i class="fas fa-check"></i>
+                            Storm and impact damage
+                        </li>
+
+                        <li>
+                            <i class="fas fa-check"></i>
+                            Concrete footer problems
+                        </li>
+
+                        <li>
+                            <i class="fas fa-check"></i>
+                            Vinyl fence cracks
+                        </li>
+
+                        <li>
+                            <i class="fas fa-check"></i>
+                            Aluminum fence damage
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+
+                <div class="before-after reveal-right">
+
+
+                    <div class="image-box">
+
+                        <div class="frame-inner">
+
+                            <img
+                                src="images/FenceRepair.PNG"
+                                alt="Damaged fence before repair"
+                            >
+
+                        </div>
+
+                        <span>
+                            Before
+                        </span>
+
+                    </div>
+
+
+
+                    <div class="image-box">
+
+                        <div class="frame-inner">
+
+                            <img
+                                src="images/UglyCapRepairFix2.PNG"
+                                alt="Fence cap after repair"
+                            >
+
+                        </div>
+
+                        <span>
+                            After
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ========================================
+             PROCESS
+        ========================================= -->
+
+        <section class="process-section">
+
+
+            <div class="process-overlay"></div>
+
+
+            <div class="process-content">
+
+
+                <div class="section-heading light reveal">
+
+                    <p class="section-label">
+                        OUR PROCESS
+                    </p>
+
+                    <h2>
+                        Simple From Start to Finish
+                    </h2>
+
+                </div>
+
+
+
+                <div class="process-grid">
+
+
+                    <div class="process-card reveal">
+
+                        <span class="process-number">
+                            01
+                        </span>
+
+                        <h3>
+                            Inspection
+                        </h3>
+
+                        <p>
+                            We inspect the project and determine
+                            what work is needed.
+                        </p>
+
+                    </div>
+
+
+
+                    <div class="process-card reveal">
+
+                        <span class="process-number">
+                            02
+                        </span>
+
+                        <h3>
+                            Free Estimate
+                        </h3>
+
+                        <p>
+                            We provide clear pricing and discuss
+                            your available options.
+                        </p>
+
+                    </div>
+
+
+
+                    <div class="process-card reveal">
+
+                        <span class="process-number">
+                            03
+                        </span>
+
+                        <h3>
+                            Professional Work
+                        </h3>
+
+                        <p>
+                            We complete the installation or repair
+                            using quality materials.
+                        </p>
+
+                    </div>
+
+
+
+                    <div class="process-card reveal">
+
+                        <span class="process-number">
+                            04
+                        </span>
+
+                        <h3>
+                            Final Review
+                        </h3>
+
+                        <p>
+                            We inspect the completed work and make
+                            sure the project is finished correctly.
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+
+                <div class="process-button reveal">
+
+                    <a
+                        href="#contact"
+                        class="primary-button"
+                    >
+                        Request Your Free Quote
+                    </a>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ========================================
+             STAINING
+        ========================================= -->
+
+        <section
+            class="staining-section"
+            id="staining"
+        >
+
+          <div class="staining-section-inner">
+
+
+            <div class="staining-image reveal-left">
+
+                <div class="frame-inner">
+
+                    <img
+                        src="images/Stained-HB-Fence.PNG"
+                        alt="Wood fence"
+                    >
+
+                </div>
+
+            </div>
+
+
+
+            <div class="staining-content reveal-right">
+
+                <p class="section-label">
+                    FENCE STAINING
+                </p>
+
+
+                <h2>
+                    Protect Your Fence
+                </h2>
+
+
+                <p>
+                    Wood fencing is constantly exposed to sunlight,
+                    rain, moisture, and changing temperatures.
+                </p>
+
+
+                <p>
+                    Professional staining helps protect the wood while
+                    improving the appearance and extending the life
+                    of your fence.
+                </p>
+
+
+                <a
+                    href="#contact"
+                    class="primary-button"
+                >
+                    Request a Staining Quote
+                </a>
+
+            </div>
+
+
+          </div>
+
+        </section>
+
+
+
+        <!-- ========================================
+             GALLERY
+        ========================================= -->
+
+        <section
+            class="gallery-section"
+            id="gallery"
+        >
+
+
+            <div class="section-heading reveal">
+
+                <p class="section-label">
+                    OUR WORK
+                </p>
+
+
+                <h2>
+                    Recent Fence Projects
+                </h2>
+
+
+                <p>
+                    A quick look at a few recent installs and repairs.
+                    See the full gallery for many more.
+                </p>
+
+            </div>
+
+
+
+            <div class="gallery-grid">
+
+
+                <div class="gallery-item reveal">
+
+                    <div class="frame-inner">
+
+                        <img
+                            src="images/Lattice.PNG"
+                            alt="Fence project"
+                        >
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="gallery-item reveal">
+
+                    <div class="frame-inner">
+
+                        <img
+                            src="images/TnG gate1.PNG"
+                            alt="TnG gate"
+                        >
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="gallery-item reveal">
+
+                    <div class="frame-inner">
+
+                        <img
+                            src="images/4Rail Ranch2.PNG"
+                            alt="Completed fence repair"
+                        >
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="gallery-item reveal">
+
+                    <div class="frame-inner">
+
+                        <img
+                            src="images/CapBB.jpeg"
+                            alt="Fence installation"
+                        >
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="gallery-item reveal">
+
+                    <div class="frame-inner">
+
+                        <img
+                            src="images/CapHeader.PNG"
+                            alt="Fence entryway"
+                        >
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+            <div class="gallery-cta reveal">
+
+                <a
+                    href="gallery.html"
+                    class="primary-button"
+                >
+                    View Full Gallery
+                </a>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ========================================
+             CONTACT
+        ========================================= -->
+
+        <section
+            class="contact-section"
+            id="contact"
+        >
+
+
+            <div class="contact-wrapper">
+
+
+                <div class="contact-text reveal-left">
+
+                    <p class="section-label">
+                        FREE ESTIMATE
+                    </p>
+
+
+                    <h2>
+                        Ready to Start Your Fence Project?
+                    </h2>
+
+
+                    <p>
+                        Tell us about your project and we'll contact
+                        you to discuss your free estimate.
+                    </p>
+
+
+
+                    <div class="contact-details">
+
+
+                        <div>
+
+                            <i class="fas fa-phone"></i>
+
+                            <span>
+                                <strong>Phone</strong>
+                                470-605-9958
+                            </span>
+
+                        </div>
+
+
+
+                        <div>
+
+                            <i class="fas fa-envelope"></i>
+
+                            <span>
+                                <strong>Email</strong>
+                                infonachofence@gmail.com
+                            </span>
+
+                        </div>
+
+
+
+                        <div>
+
+                            <i class="fas fa-clock"></i>
+
+                            <span>
+                                <strong>Hours</strong>
+                                Mon–Fri 8:00 AM–5:00 PM
+                            </span>
+
+                        </div>
+
+
+
+                        <div>
+
+                            <i class="fas fa-share-nodes"></i>
+
+                            <span>
+                                <strong>Follow Us</strong>
+                                <span class="contact-social">
+
+                                    <a
+                                        href="https://www.tiktok.com/@nachofence"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        aria-label="Nacho Fence on TikTok"
+                                    >
+                                        <i class="fab fa-tiktok"></i>
+                                        TikTok
+                                    </a>
+
+                                    <a
+                                        href="https://www.instagram.com/nachofence/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        aria-label="Nacho Fence on Instagram"
+                                    >
+                                        <i class="fab fa-instagram"></i>
+                                        Instagram
+                                    </a>
+
+                                </span>
+                            </span>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="contact-form reveal-right">
+
+
+                    <form id="quoteForm">
+
+
+                        <div class="form-row">
+
+
+                            <div class="form-group">
+
+                                <label for="name">
+                                    Full Name *
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="name"
+                                    name="name"
+                                    required
+                                >
+
+                            </div>
+
+
+
+                            <div class="form-group">
+
+                                <label for="phone">
+                                    Phone Number *
+                                </label>
+
+                                <input
+                                    type="tel"
+                                    id="phone"
+                                    name="phone"
+                                    required
+                                >
+
+                            </div>
+
+
+                        </div>
+
+
+
+                        <div class="form-row">
+
+
+                            <div class="form-group">
+
+                                <label for="email">
+                                    Email Address *
+                                </label>
+
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    required
+                                >
+
+                            </div>
+
+
+
+                            <div class="form-group">
+
+                                <label for="address">
+                                    Service Address
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="address"
+                                    name="address"
+                                >
+
+                            </div>
+
+
+                        </div>
+
+
+
+                        <div class="form-group">
+
+                            <label for="service">
+                                Service Needed *
+                            </label>
+
+
+                            <select
+                                id="service"
+                                name="service"
+                                required
+                            >
+
+                                <option value="">
+                                    Select a Service
+                                </option>
+
+                                <option value="installation">
+                                    Fence Installation
+                                </option>
+
+                                <option value="repair">
+                                    Fence Repair
+                                </option>
+
+                                <option value="staining">
+                                    Fence Staining
+                                </option>
+
+                                <option value="gate">
+                                    Gate Installation / Repair
+                                </option>
+
+                                <option value="commercial">
+                                    Commercial Fence
+                                </option>
+
+                                <option value="other">
+                                    Other
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+
+                        <div class="form-group">
+
+                            <label for="details">
+                                Tell Us About Your Project
+                            </label>
+
+                            <textarea
+                                id="details"
+                                name="details"
+                                rows="5"
+                            ></textarea>
+
+                        </div>
+
+
+
+                        <button
+                            type="submit"
+                            class="form-button"
+                        >
+                            Submit Quote Request
+                        </button>
+
+
+                        <p
+                            id="formMessage"
+                            class="form-message"
+                        ></p>
+
+
+                    </form>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- ========================================
+         FOOTER
+    ========================================= -->
+
+    <footer>
+
+
+        <div class="footer-content">
+
+
+            <div>
+
+                <h2>
+                    Nacho Fence
+                </h2>
+
+                <p>
+                    Quality fencing built to last.
+                </p>
+
+
+                <div class="footer-social">
+
+                    <a
+                        href="https://www.tiktok.com/@nachofence"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Nacho Fence on TikTok"
+                    >
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+
+                    <a
+                        href="https://www.instagram.com/nachofence/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Nacho Fence on Instagram"
+                    >
+                        <i class="fab fa-instagram"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="footer-links">
+
+                <a href="#home">Home</a>
+                <a href="#services">Services</a>
+                <a href="#repair">Repair</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="#contact">Contact</a>
+
+            </div>
+
+
+        </div>
+
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Nacho Fence. All Rights Reserved.
+            </p>
+
+        </div>
+
+
+    </footer>
+
+    <!-- ========================================
+     AI CHATBOT
+======================================== -->
+
+<button
+id="chatbotToggle"
+class="chatbot-toggle"
+aria-label="Open Nacho Fence AI Assistant"
+>
+<i class="fas fa-comments"></i>
+</button>
+
+
+<div
+id="chatbotWindow"
+class="chatbot-window"
+>
+
+<div class="chatbot-header">
+
+    <div>
+
+        <p class="chatbot-eyebrow">
+            AI ASSISTANT
+        </p>
+
+        <h3>
+            Nacho Fence AI
+        </h3>
+
+    </div>
+
+
+    <button
+        id="chatbotClose"
+        class="chatbot-close"
+        aria-label="Close chatbot"
+    >
+        &times;
+    </button>
+
+</div>
+
+
+<div
+    id="chatbotMessages"
+    class="chatbot-messages"
+>
+
+    <div class="chat-message bot-message">
+
+        <div class="message-avatar">
+            AI
+        </div>
+
+        <div class="message-bubble">
+
+            Hi! I'm the Nacho Fence AI Assistant.
+            I can help with fence materials,
+            installation, repairs, staining,
+            and general fencing questions.
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<div class="chatbot-suggestions">
+
+    <button class="chat-suggestion">
+        What fences do you install?
+    </button>
+
+    <button class="chat-suggestion">
+        What is best for privacy?
+    </button>
+
+    <button class="chat-suggestion">
+        Do you repair fences?
+    </button>
+
+    <button class="chat-suggestion">
+        How do I get a quote?
+    </button>
+
+</div>
+
+
+<form
+    id="chatbotForm"
+    class="chatbot-form"
+>
+
+    <input
+        type="text"
+        id="chatbotInput"
+        placeholder="Ask about fencing..."
+        autocomplete="off"
+        maxlength="500"
+    >
+
+
+    <button
+        type="submit"
+        aria-label="Send message"
+    >
+        <i class="fas fa-paper-plane"></i>
+    </button>
+
+</form>
+
+</div>
+
+
+
+    <script src="js/main.js"></script>
+    <script src="js/chatbot.js"></script>
+
+</body>
+
+</html>

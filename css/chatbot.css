@@ -1,0 +1,550 @@
+/* ========================================
+   NACHO FENCE AI CHATBOT
+======================================== */
+
+
+/* ========================================
+   FLOATING CHAT BUTTON
+======================================== */
+
+.chatbot-toggle {
+    position: fixed;
+
+    right: 28px;
+    bottom: 28px;
+
+    width: 64px;
+    height: 64px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    border-radius: 50%;
+
+    background: linear-gradient(
+        135deg,
+        #d4a64a,
+        #b98a2f
+    );
+
+    color: #2b2016;
+
+    font-size: 25px;
+
+    cursor: pointer;
+
+    z-index: 9998;
+
+    box-shadow:
+        0 10px 30px rgba(43, 32, 22, 0.35);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+.chatbot-toggle:hover {
+    transform: translateY(-4px) scale(1.04);
+
+    box-shadow:
+        0 14px 35px rgba(43, 32, 22, 0.45);
+}
+
+
+
+/* ========================================
+   CHATBOT WINDOW
+======================================== */
+
+.chatbot-window {
+    position: fixed;
+
+    right: 28px;
+    bottom: 105px;
+
+    width: 385px;
+    height: 565px;
+
+    display: none;
+    flex-direction: column;
+
+    overflow: hidden;
+
+    background-color: #f5f1e8;
+
+    border: 1px solid rgba(43, 32, 22, 0.18);
+    border-radius: 18px;
+
+    box-shadow:
+        0 25px 60px rgba(24, 17, 11, 0.32);
+
+    z-index: 9999;
+}
+
+
+/* JS adds this class when button is clicked */
+
+.chatbot-window.open {
+    display: flex;
+
+    animation: chatbotOpen 0.25s ease;
+}
+
+
+@keyframes chatbotOpen {
+
+    from {
+        opacity: 0;
+        transform: translateY(15px) scale(0.97);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+
+}
+
+
+
+/* ========================================
+   HEADER
+======================================== */
+
+.chatbot-header {
+    min-height: 82px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 17px 20px;
+
+    background-color: #2b2016;
+
+    border-bottom: 4px solid #b98a2f;
+}
+
+
+.chatbot-eyebrow {
+    margin: 0 0 4px;
+
+    color: #d4a64a;
+
+    font-family: "Inter", Arial, sans-serif;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+}
+
+
+.chatbot-header h3 {
+    margin: 0;
+
+    color: white;
+
+    font-family: "Fraunces", Georgia, serif;
+
+    font-size: 22px;
+
+    font-weight: 600;
+}
+
+
+.chatbot-close {
+    width: 36px;
+    height: 36px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+
+    background: transparent;
+
+    color: white;
+
+    font-size: 30px;
+
+    cursor: pointer;
+
+    border-radius: 50%;
+
+    transition: background-color 0.2s ease;
+}
+
+
+.chatbot-close:hover {
+    background-color: rgba(255, 255, 255, 0.12);
+}
+
+
+
+/* ========================================
+   MESSAGE AREA
+======================================== */
+
+.chatbot-messages {
+    flex: 1;
+
+    overflow-y: auto;
+
+    padding: 20px 16px;
+
+    background-color: #f5f1e8;
+
+    scroll-behavior: smooth;
+}
+
+
+.chat-message {
+    display: flex;
+
+    align-items: flex-end;
+
+    gap: 9px;
+
+    margin-bottom: 16px;
+}
+
+
+
+/* ========================================
+   AI MESSAGES
+======================================== */
+
+.bot-message {
+    justify-content: flex-start;
+}
+
+
+.message-avatar {
+    width: 35px;
+    height: 35px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background-color: #8c5a34;
+
+    color: white;
+
+    font-family: "Inter", Arial, sans-serif;
+
+    font-size: 11px;
+
+    font-weight: 800;
+}
+
+
+.bot-message .message-bubble {
+    max-width: 76%;
+
+    padding: 12px 14px;
+
+    background-color: white;
+
+    color: #211d18;
+
+    border: 1px solid rgba(43, 32, 22, 0.10);
+
+    border-radius: 6px 15px 15px 15px;
+
+    font-family: "Inter", Arial, sans-serif;
+
+    font-size: 14px;
+
+    line-height: 1.55;
+
+    box-shadow:
+        0 3px 10px rgba(43, 32, 22, 0.06);
+}
+
+
+
+/* ========================================
+   USER MESSAGES
+======================================== */
+
+.user-message {
+    justify-content: flex-end;
+}
+
+
+.user-message .message-bubble {
+    max-width: 78%;
+
+    padding: 12px 14px;
+
+    background-color: #2b2016;
+
+    color: white;
+
+    border-radius: 15px 6px 15px 15px;
+
+    font-family: "Inter", Arial, sans-serif;
+
+    font-size: 14px;
+
+    line-height: 1.55;
+}
+
+
+
+/* ========================================
+   SUGGESTED QUESTIONS
+======================================== */
+
+.chatbot-suggestions {
+    display: flex;
+
+    gap: 7px;
+
+    padding: 10px 10px;
+
+    overflow-x: auto;
+
+    border-top: 1px solid rgba(43, 32, 22, 0.10);
+
+    background-color: #fffdf8;
+}
+
+
+.chatbot-suggestions::-webkit-scrollbar {
+    display: none;
+}
+
+
+.chat-suggestion {
+    flex-shrink: 0;
+
+    padding: 8px 12px;
+
+    border: 1px solid rgba(140, 90, 52, 0.35);
+
+    border-radius: 999px;
+
+    background-color: white;
+
+    color: #8c5a34;
+
+    font-family: "Inter", Arial, sans-serif;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease;
+}
+
+
+.chat-suggestion:hover {
+    background-color: #8c5a34;
+
+    color: white;
+}
+
+
+
+/* ========================================
+   INPUT AREA
+======================================== */
+
+.chatbot-form {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 12px 14px;
+
+    background-color: white;
+
+    border-top: 1px solid rgba(43, 32, 22, 0.10);
+}
+
+
+.chatbot-form input {
+    flex: 1;
+
+    min-width: 0;
+
+    padding: 12px 14px;
+
+    border: 1px solid rgba(43, 32, 22, 0.20);
+
+    border-radius: 10px;
+
+    outline: none;
+
+    background-color: white;
+
+    color: #211d18;
+
+    font-family: "Inter", Arial, sans-serif;
+
+    font-size: 14px;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.chatbot-form input:focus {
+    border-color: #b98a2f;
+
+    box-shadow:
+        0 0 0 3px rgba(185, 138, 47, 0.14);
+}
+
+
+.chatbot-form input:disabled {
+    background-color: #f2eee7;
+
+    cursor: not-allowed;
+}
+
+
+.chatbot-form button {
+    width: 46px;
+    height: 46px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background-color: #b98a2f;
+
+    color: #2b2016;
+
+    font-size: 17px;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.chatbot-form button:hover {
+    background-color: #d4a64a;
+
+    transform: translateY(-1px);
+}
+
+
+
+/* ========================================
+   TYPING INDICATOR
+======================================== */
+
+.typing-indicator {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 4px;
+
+    padding: 6px 2px;
+}
+
+
+.typing-indicator span {
+    width: 6px;
+    height: 6px;
+
+    border-radius: 50%;
+
+    background-color: #5a544a;
+
+    animation:
+        chatbotTyping 1.2s infinite ease-in-out;
+}
+
+
+.typing-indicator span:nth-child(2) {
+    animation-delay: 0.15s;
+}
+
+
+.typing-indicator span:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+
+@keyframes chatbotTyping {
+
+    0%,
+    60%,
+    100% {
+        transform: translateY(0);
+
+        opacity: 0.4;
+    }
+
+    30% {
+        transform: translateY(-5px);
+
+        opacity: 1;
+    }
+
+}
+
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 600px) {
+
+    .chatbot-toggle {
+        right: 18px;
+        bottom: 18px;
+
+        width: 58px;
+        height: 58px;
+    }
+
+
+    .chatbot-window {
+        left: 12px;
+        right: 12px;
+
+        bottom: 88px;
+
+        width: auto;
+
+        height: min(600px, 72vh);
+
+        border-radius: 15px;
+    }
+
+}
