@@ -70,14 +70,41 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (quoteForm) {
 
-        quoteForm.addEventListener("submit", function (event) {
+        quoteForm.addEventListener("submit", async function (event) {
 
             event.preventDefault();
 
-            formMessage.textContent =
-                "Thank you! Your request has been received.";
+            formMessage.textContent = "Sending...";
 
-            quoteForm.reset();
+            const formData = new FormData(quoteForm);
+            const payload = Object.fromEntries(formData.entries());
+
+            try {
+
+                const response = await fetch(
+                    "https://nacho-fence-ai-api.vercel.app/api/quote",
+                    {
+                        method: "POST",
+                        headers: { "Content-Type": "application/json" },
+                        body: JSON.stringify(payload)
+                    }
+                );
+
+                if (!response.ok) {
+                    throw new Error("Request failed");
+                }
+
+                formMessage.textContent =
+                    "Thank you! Your request has been received.";
+
+                quoteForm.reset();
+
+            } catch (error) {
+
+                formMessage.textContent =
+                    "Something went wrong. Please call 470-605-9958 instead.";
+
+            }
 
         });
 
